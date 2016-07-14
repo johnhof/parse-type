@@ -1,0 +1,33 @@
+{
+  "name": "parse-type",
+  "version": "1.0.0",
+  "description": "Parse types of nested javascript strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnhof/parse-type.git"
+  },
+  "keywords": [
+    "parse",
+    "type",
+    "nested",
+    "object"
+  ],
+  "author": "John Hofrichter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnhof/parse-type/issues"
+  },
+  "homepage": "https://github.com/johnhof/parse-type#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  }
+}
