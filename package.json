@@ -1,5 +1,5 @@
 {
-  "name": "parse-type",
+  "name": "parse-types",
   "version": "1.0.0",
   "description": "Parse types of nested javascript strings",
   "main": "index.js",
