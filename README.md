@@ -1,5 +1,7 @@
 # parse-type
 
+[![Build Status](https://travis-ci.org/johnhof/parse-types.svg?branch=master)](https://travis-ci.org/johnhof/parse-types)
+
 Parse types of nested javascript strings
 
 # Usage
