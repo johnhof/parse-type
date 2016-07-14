@@ -1,6 +1,6 @@
 {
   "name": "parse-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parse types of nested javascript strings",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "lodash": "^4.13.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "moment": "^2.14.1"
   },
   "dependencies": {
     "lodash": "^4.13.1"

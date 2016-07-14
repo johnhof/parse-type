@@ -18,12 +18,8 @@ let expect = (condition, msg) => { if (!condition) toss('parse type expects ' + 
 let hasDecimal = (str) => ((str || '').indexOf('.') > -1);
 
 let parse = {};
-parse.int = (s) => {
-  let val = parseInt(s, 10);
-  return (isNaN(val)) ? s : val;
-};
-parse.float = (s) => {
-  let val = parseFloat(s);
+parse.num = (s) => {
+  let val = Number(s);
   return (isNaN(val)) ? s : val;
 };
 parse.bool = (s) => {
@@ -96,10 +92,10 @@ module.exports = function (input, options) {
       result = parse.bool(prop.value);
       if (!_.isString(result)) { _.set(object, prop.key, result); continue; }
 
-      result = hasDecimal(prop.value) ?  parse.float(prop.value) : '';
+      result = hasDecimal(prop.value) ?  parse.num(prop.value) : '';
       if (!_.isString(result)) { _.set(object, prop.key, result); continue; }
 
-      result = parse.int(prop.value);
+      result = parse.num(prop.value);
       if (!_.isString(result)) { _.set(object, prop.key, result); continue; }
     }
   }
